@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <h1>My Tasks</h1>
+        <small>
+          <span id="date-day"></span>, <span id="date-day-number"></span> of
+          <span id="date-month"></span>
+        </small>
+      </div>
+      <div class="add-task-container">
+        <input
+          type="text"
+          name=""
+          id="new-task-name"
+          placeholder="What do you need to do?" />
+        <button id="add-task-btn">+</button>
+      </div>
+      <div class="filters-container">
+        <h3 id="all-filter" class="active">All</h3>
+        <h3 id="active-filter">Active</h3>
+        <h3 id="completed-filter">Completed</h3>
+      </div>
+      <div class="tasks-container">
+        <ul id="task-list"></ul>
+      </div>
+      <div class="items-container">
+        <small><span id="items-text">1</span> items left</small>
+        <button id="clear-btn">Clear completed</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
